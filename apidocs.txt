@@ -1,0 +1,43 @@
+API documentation 
+
+/* developer created the API so they
+	
+	know how they have created the API 
+	
+	and they need to provide documentation
+	
+	so that we can test the API
+	
+	*/
+	
+	read
+	http://localhost:80/api_testing/product/read.php
+	
+	read one - require param (id)
+	http://localhost:80/api_testing/product/read_one.php
+	
+	create product - require Json Body
+	http://localhost:80/api_testing/product/create.php
+
+					{
+                    "name": "Selenium WebDriver",
+                    "description": "The most advanced Selenium Book",
+                    "price": "39.00",
+                    "category_id": "3",
+                    "category_name": "Books"
+
+                    }
+	update - require body to update
+	
+	http://localhost:80/api_testing/product/update.php
+				{
+                
+                    "id": 1000,
+                    "name": "Selenium WebDriver",
+                    "description": "Selenium Book",
+                    "price": 405,
+                    "category_id": 3
+                }			
+					
+	delete - require id as JSON body
+	http://localhost:80/api_testing/product/delete.php
